@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone book</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<h1><b>PHONE BOOK</b></h1>
+
+<div class="container inputs_wrapper">
+
+
+        <form class="contact_form" id="add_form">
+            <input placeholder="Name" class="contact_name"></input>
+            <input placeholder="Phone number" type="tel" class="contact_number"></input>
+            <input placeholder="Position" class="contact_position"></input>
+
+            <button class="btn_add" type="submit">Add contact</button>
+        </form>
+
+        <form class="search_contact" id="search">
+            <input type="search" placeholder="Search" class="search">
+
+            <select class="search_select">
+                <option value="name">Name</option>
+                <option value="number">Number</option>
+                <option value="position">Position</option>
+            </select>
+
+            <button class="btn_clear">Clear</button>
+
+        </form>
+
+        <div class="about_contact_form" id="contact_container">
+            <fieldset>
+                <legend><b>CONTACTS :</b> </legend>
+
+                <div class="contact_item">
+
+                    <h3 type="text" class="about_contact_name" >Name</h3>
+                    <p type="text" class="about_contact_number">Number</p>
+                    <p type="text" class="about_contact_position">Position</p>
+
+                    <div class="about_contact_btns">
+
+                        <button class="about_contact_change">Change</button>
+                        <button class="about_contact_info">Info</button>
+                        <button class="about_contact_remove">Remove</button>
+                    </div>
+
+                </div>
+            </fieldset>
+
+        </div>
+
+        <form class="contact_form" id="change_form">
+
+            <input placeholder="Name" class="contact_name"></input>
+            <input placeholder="Phone number" type="tel" class="contact_number"></input>
+            <input placeholder="Position" class="contact_position"></input>
+
+            <button class="btn_add" type="submit">Change contact</button>
+
+        </form>
+
+        <div class="about_contact_form" id="info_container">
+            <fieldset>
+                <legend><b>INFO:</b> </legend>
+
+                <h3 type="text" class="about_contact_name">Name</h3>
+                <p type="text" class="about_contact_number" >Number</p>
+                <p type="text" class="about_contact_position" >Position</p>
+
+                <div class="about_contact_btns">
+                    <button class="about_contact_back">Back</button>
+                </div>
+
+            </fieldset>
+
+        </div>
+
+        <div class="about_contact_form" id="nocontact">
+            <p type="text" class="about_contact_number">No contacts</p>
+        </div>
+
+
+</div>
+
+
+<script type="module" src="js/index.js"></script>
+</body>
+</html>
